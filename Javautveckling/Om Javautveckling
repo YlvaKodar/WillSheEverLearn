@@ -1,0 +1,49 @@
+Kod från Javautveckling (Javautvecklare, Nackademin)
+En introduktionskurs i Java.
+
+Uppgift 1:
+Fönsterkostnadskalkylator (G-uppgift):
+Räknar ut kostnad och rabatter för fönsterinstallation.
+Miniräknare (VG-upgift):
+"Kravspecifikation!
+• Du måste läsa in ett matematiskt uttryck som en enda sträng.
+Exempel på giltiga uttryck: 1+2 , -200-100 , 2*5.5 , 10/2
+• Skriv testkod för att testa ogiltiga uttryck och visa felmeddelanden i terminalen.
+1) Uttrycket får inte vara tomt.
+Visa ett lämpligt felmeddelande.
+2) Uttrycket måste innehålla en av följande operatorer: +, -, *, /
+Följande uttryck är t.ex. ogiltiga:
+10%12 (modulus/procent)
+1234 (ingen operator alls)
+Visa ett felmeddelande om en giltig operator saknas!
+3) Uttrycket måste innehålla två operander och en operator.
+Uttrycket får alltså inte innehålla flera operatorer t.ex. 1+2*2
+och inte heller en enda operand t.ex. 5/ eller *3
+Operanderna måste vara reella tal t.ex. 3, -5, 4.5, -1.5 (ej andra tecken)
+Visa ett lämpligt felmeddelande vid fel.
+4) Man får inte dividera med 0
+Visa ett lämpligtfelmeddelande.
+• OBS! Du får inte använda RegEx för att testa uttrycket.
+Använd metoder i klasserna String, Character och Double.
+• Använd selektioner och iterationer för att lösa uppgiften.
+• Du får inte använda arrayer!"
+
+Uppgift 2:
+Frekvenstabell över tärningskast (G-uppgift)
+Innefattar skrivande till fil, arrayer och projekt med flera klasser.
+FileAnalyzer (VG-uppgift)
+Innefattar analys av filinnehål.
+
+Uppgift 3:
+Elevator (G-uppgift):
+Hiss som åker till olika vångingsplan, innefattar kontruktors-konstruktion.
+Valfritt program med två klasser (VG-uppgift):
+SuperHeroGuineapigChallenge (konsollspel / rollspel / interaktiv berättelse)
+- Minst två klasser
+- Smarta och säkra
+- Interagera med användaren
+- Validera data och klara av inmatning av fel data
+- Pågå så länge användaren vill
+- Alla metoder och klasser måste vara relevanta.
+
+

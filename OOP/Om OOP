@@ -1,0 +1,31 @@
+Kod från Objektorienterad programmering i Java (Javautvecklare, Nackademin):
+Kursen är en introduktion i objektorienterad programmering i Java
+
+Inlämninguppgifter:
+
+1. Greenest Växthotell, sept -24:
+Ett program som hjälper hotellpersonalen att ge rätt mängd näring åt de
+inhysta växterna. Uppgiften innefattar
+- arv
+- interface
+- inkapsling
+- polymorfism
+- enums.
+
+2. Best Gym Ever, okt -24:
+Gymmets databas har kraschat, kvar finns en fil med medlemmars namn och senast betalda årsavgift.
+Programmet hjälper gymmets receptionist att kontrollera om en besökare är medlem, före detta medlem
+eller obehörig, samt loggar medlemmars besök åt gymmets PT. Uppgiften innefattar
+- läsning från fil
+- skrivning till fil
+- enhetstester.
+
+3. Fifteen game, :
+Grupparbete; introduktion till git och github:
+https://github.com/PauliLinde/FifteenGame
+
+4. Quizkampen
+Grupparbete/avslutningsarbete:
+https://github.com/viktorjonasson/OOPJ-assignment-4-quizkampen
+
+
