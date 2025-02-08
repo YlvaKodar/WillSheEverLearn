@@ -1,0 +1,25 @@
+Kod från Databasteknik (Nackademin) feb. -25
+Fem veckor introduktion till databaser i allmänhet, SQL och JDBC.
+
+ShoeWebshop:
+Krav:
+SQL
+- databas för en skobutik
+- SP addToCart med minst tre inparametrar (kundID, orderID (kan vara null) och skoId)
+- trigger som reggar skor som tar slut i lager
+- felhantering med transaction
+JDBC: app som
+- kommunicerar med kund i terminal eller gui
+- har en inloggningsfunktion
+- anropar SP addToCart
+- ger relevanta felmeddelanden
+
+Kommentar:
+Jag valde att bygga ett gui i swing och att göra alla uppdateringar av sökningar
+och kundkorgar genom att anropa databasen, eftersom jag ville sätta mig in i olika sätt
+att använda JDBC.
+Det resulterade i ett lite för stort projekt i förhållande till tidsramen -
+silvertejpslösningar och ett ofärdigt GUI.
+
+I ShoeWebshopOriginal-package ligger uppgiften som jag presenterade den.
+I ShoeWebshopUpdated-package ligger appen jag fortsätter jobba med.
