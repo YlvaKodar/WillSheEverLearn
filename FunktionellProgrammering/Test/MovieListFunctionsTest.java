@@ -13,13 +13,14 @@ class MovieListFunctionsTest {
     Movie m3 = new Movie("573a1396f29313caabce5522", "The Common Man", 1975, asList("Drama"), null, asList("Jean Carmet", "Pierre Tornade", "Jean Bouise", "Michel Peyrelon"), 7.4, asList("French"), 100);
     Movie m4 = new Movie("573a1396f29313caabce553b", "Wrong Move", 1975, asList("Drama"), null, asList("Rèdiger Vogler", "Hans Christian Blech", "Hanna Schygulla", "Nastassja Kinski"), 7.1, asList("German"), 103);
     Movie m5 = new Movie("573a1396f29313caabce5548", "White Collar Blues", 1975, asList("Comedy"), null, asList("Paolo Villaggio", "Anna Mazzamauro", "Gigi Reder", "Giuseppe Anatrelli"), 8.0, asList("Italian", "Japanese", "French", "German"), 108);
-    Movie m6 = new Movie("574a1396f29313caabce553b", "Wrong Move", 1975, asList("Fan fiction"), null, asList("Gigi Reder"), 8.3, asList("Rövarspråket"), 7000);
-    List<Movie> movieList = asList(m1, m2, m3, m4, m5, m6);
+    Movie m6 = new Movie("574a1396f29313caabce553b", "Wrong Move", 1975, asList("Fan fiction"), null, asList("Gigi Reder", "Daisuke Itè", "Paolo Villaggio"), 8.3, asList("Rövarspråket"), 7000);
+    Movie m7 = new Movie("574a1396f29313caabce553c", "Hypothetic", 1975, asList("Imaginary"), null, asList("Gigi Reder", "Paolo Villaggio"), 5.3, asList("Pig latin"), 30);
+    List<Movie> movieList = asList(m1, m2, m3, m4, m5, m6, m7);
     MovieListFunctions mlf = new MovieListFunctions();
 
     @Test
     void moviesInList() {
-        assertEquals(6, MovieListFunctions.moviesInList(movieList));
+        assertEquals(movieList.size(), MovieListFunctions.moviesInList(movieList));
     }
 
     @Test
@@ -29,13 +30,15 @@ class MovieListFunctionsTest {
 
     @Test
     void distinctGenresInList() {
-        assertEquals(6, MovieListFunctions.distinctGenresInList(movieList));
+        assertEquals(7, MovieListFunctions.distinctGenresInList(movieList));
     }
 
     @Test
     void actorsInHighestRankedMovies() {
         List<String> result = MovieListFunctions.actorsInHighestRankedMovies(movieList);
-        List<String> expected = asList("Yuriy Solomin", "Maksim Munzuk", "Mikhail Bychkov", "Vladimir Khrulev", "Gigi Reder");
+        List<String> expected = asList("Yuriy Solomin", "Maksim Munzuk", "Mikhail Bychkov", "Vladimir Khrulev", "Gigi Reder", "Daisuke Itè", "Paolo Villaggio");
+
+        System.out.println(result);
 
         assertEquals(expected.size(), result.size());
         assertNotEquals(500, result.size());
@@ -45,24 +48,24 @@ class MovieListFunctionsTest {
 
     @Test
     void movieWithFewestListedActors() {
-        assertEquals(MovieListFunctions.movieWithFewestListedActors(movieList), "Wrong Move");
+        assertEquals(MovieListFunctions.movieWithFewestListedActors(movieList), "Hypothetic");
         assertNotEquals(MovieListFunctions.movieWithFewestListedActors(movieList), "Dersu Uzala");
     }
 
     @Test
     void numberOfActorsInMultipleMovies() {
-        assertEquals(1, MovieListFunctions.numberOfActorsInMultipleMovies(movieList));
+        assertEquals(2, MovieListFunctions.numberOfActorsInMultipleMovies(movieList));
     }
 
     @Test
     void actedInMostMovies() {
-        assertEquals(MovieListFunctions.actedInMostMovies(movieList), "Gigi Reder");
+        assertEquals((MovieListFunctions.actedInMostMovies(movieList)), "Gigi Reder, Paolo Villaggio");
         assertNotEquals(MovieListFunctions.actedInMostMovies(movieList), "Yuriy Solomin");
     }
 
     @Test
     void distinctLanguagesInList() {
-        assertEquals(7, MovieListFunctions.distinctLanguagesInList(movieList));
+        assertEquals(8, MovieListFunctions.distinctLanguagesInList(movieList));
     }
 
     @Test

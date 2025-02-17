@@ -3,5 +3,5 @@ Kod från Funktionell programmering (Javautvecklare, Nackademin):
 Kursen är en 4 veckors introduktion i funktionell programmering i Java och Kotlin.
 
 1. MovieDatabase, feb -25:
-Kodskeletten är tillhandahållna av kursen:
+Kodskeletten för Movie och MongoDBAtlasDownload är tillhandahållna av kursen:
 https://github.com/sigrunolafsdottir/JavaFuncProg/tree/master/src/mogodbDemo/atlas
